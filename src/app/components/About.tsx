@@ -37,7 +37,7 @@ const About = () => {
             <br /> Focused on digital branding and strategic optimization, we
             ensure your online presence resonates profoundly. Leveraging
             advanced technology, we execute impactful campaigns, expanding your
-            brand's reach and engagement.
+            brand&apos;s reach and engagement.
             <br /> From captivating website design to optimized content and
             strategic automation, we stand as your dedicated partners in
             achieving unparalleled success in the digital realm.and engagement.
