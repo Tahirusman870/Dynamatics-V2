@@ -1,15 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
-
-
 
   prefix: "",
   theme: {
@@ -22,7 +20,11 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        "parallax" : 'url("/images/banner-home.webp")',
+        parallax: 'url("/images/banner-home3.png")',
+      },
+      fontFamily: {
+        Kanit: ['"Kanit"', "sans-serif"],
+        // Add more custom font families as needed
       },
       keyframes: {
         "accordion-down": {
@@ -41,6 +43,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

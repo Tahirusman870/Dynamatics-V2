@@ -3,24 +3,16 @@ import React, { Profiler, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
-import Nav from "./components/Nav";
-import MobileNav from "./components/MobileNav";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Banner from "./components/Banner";
-import Portfolio from "./components/Portfolio";
-
-
-import Testimonial from "./components/Testimonial";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Technologies from "@/components/Technologies";
+import Service from "@/components/Service";
+import Portfolio from "@/components/Portfolio";
+import Team from "@/components/Team";
+import MeetingSet from "@/components/MeetingSet";
+import Banner from "@/components/Banner";
 
 const HomePage = () => {
-  const [nav, setNav] = useState(false);
-  const openNav = () => setNav(true);
-  const closeNav = () => setNav(false);
-
   // animation AOS Setup
   useEffect(() => {
     // You can also pass an optional settings object
@@ -49,17 +41,15 @@ const HomePage = () => {
   return (
     <div className="overflow-x-hidden">
       <div>
-        <MobileNav nav={nav} closeNav={closeNav} />
-        <Nav openNav={openNav} />
         <Hero />
         <div className="relative z-[30] ">
           <About />
-          <Services />
+          <Technologies />
+          <Service />
           <Banner/>
-          <Portfolio/>
-          <Testimonial />
-          <Blog />
-          <Footer />
+          <Portfolio />
+          <Team />
+          <MeetingSet/>
         </div>
       </div>
     </div>
