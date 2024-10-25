@@ -69,7 +69,7 @@ const About = () => {
             <p className="text-[14px] md:text-[18px] text-justify text-slate-200 font-Kanit w-[100%] font-light ">
               Focused on digital branding and strategic optimization, we ensure
               your online presence resonates profoundly. Leveraging advanced
-              technology, we execute impactful campaigns, expanding your brand's
+              technology, we execute impactful campaigns, expanding your brand&apos;s
               reach and engagement. From captivating website design to optimized
               content and strategic automation, we stand as your dedicated
               partners in achieving unparalleled success in the digital
